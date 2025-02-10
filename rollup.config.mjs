@@ -4,7 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 
 export default {
-  input: "./src/index.ts",
+  input: "./src/index.js",
   output: [
     {
       dir: "dist/esm",
@@ -21,7 +21,6 @@ export default {
     resolve(),
     babel({ babelHelpers: "runtime" }),
     commonjs(),
-    typescript(),
   ],
   external: ["react", "react-dom"],
 };
