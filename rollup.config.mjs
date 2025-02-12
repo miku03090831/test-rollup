@@ -5,6 +5,7 @@ import babel from "@rollup/plugin-babel";
 
 export default {
   input: "./src/index.ts",
+  jsx: "preserve",
   output: [
     {
       dir: "dist/esm",

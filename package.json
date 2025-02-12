@@ -1,8 +1,12 @@
 {
-  "name": "testrollup",
-  "version": "1.0.0",
+  "name": "@miku03090831/testrollup",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cjs/src/index.js",
+  "module": "dist/esm/src/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
