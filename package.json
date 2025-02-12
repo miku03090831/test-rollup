@@ -1,6 +1,6 @@
 {
   "name": "@miku03090831/testrollup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/cjs/src/index.js",
   "module": "dist/esm/src/index.js",
@@ -28,6 +28,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.34.6",
+    "rollup-plugin-dts": "^6.1.1",
     "tslib": "^2.8.1",
     "typescript": "^5.7.3"
   }
