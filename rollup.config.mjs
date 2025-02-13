@@ -7,7 +7,7 @@ import dts from "rollup-plugin-dts";
 export default [
   {
     input: "./src/index.ts",
-    jsx: "preserve",
+    jsx: "react",
     output: [
       {
         dir: "dist/esm",
