@@ -3,6 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import dts from "rollup-plugin-dts";
+import postcss from "rollup-plugin-postcss";
 
 export default [
   {
@@ -25,6 +26,7 @@ export default [
       babel({ babelHelpers: "runtime" }),
       commonjs(),
       typescript(),
+      postcss({ extract: true }),
     ],
     external: ["react", "react-dom"],
   },
@@ -48,6 +50,7 @@ export default [
       babel({ babelHelpers: "runtime" }),
       commonjs(),
       typescript(),
+      postcss({ extract: true }),
       dts(),
     ],
     external: ["react", "react-dom"],
