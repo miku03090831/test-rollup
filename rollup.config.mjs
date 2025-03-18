@@ -15,12 +15,14 @@ export default [
       {
         dir: "dist/esm",
         format: "esm",
-        preserveModules: true
+        preserveModules: true,
+        preserveModulesRoot: "src",
       },
       {
         dir: "dist/cjs",
         format: "cjs",
         preserveModules: true,
+        preserveModulesRoot: "src",
       },
     ],
     plugins: [
